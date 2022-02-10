@@ -5,3 +5,9 @@
   <hr>
   <router-view></router-view>
 </template>
+
+<style lang="scss">
+:root {
+  --el-color-primary: green;
+}
+</style>
