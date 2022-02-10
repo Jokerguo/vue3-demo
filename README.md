@@ -16,3 +16,7 @@ vue-global-api 自动引入所有vue3的api
 引入vuex
 
 引入sass
+
+引入element-plus
+
+引入reset.css
