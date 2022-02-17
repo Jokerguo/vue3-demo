@@ -15,13 +15,13 @@ export default defineConfig({
     port: 4000,
     open: true,
     cors: true,
-    // proxy: {
-    //   '/api': {
-    //         target: 'http://xxx.xxx.xxx.xxx:8000',
-    //         changeOrigin: true,
-    //         secure: false,
-    //         rewrite: (path) => path.replace('/api/', '/')
-    //   }
-    // }
+    proxy: {
+      '/api': {
+            target: 'http://119.29.44.30:30006',
+            changeOrigin: true,
+            secure: false,
+            // rewrite: (path) => path.replace('/api/', '/')
+      }
+    }
   },
 })

@@ -14,6 +14,7 @@
 
 <script setup>
 import { useStore } from 'vuex'
+import {fetchData} from '@/api/index.js'
 const store = useStore()
 
 const count = computed(()=> store.state.count)
@@ -28,4 +29,14 @@ const onAdd = ()=>{
 const reset = ()=>{
   store.commit('RESET_COUNT')
 }
+
+const xxx  = ()=>{
+  console.log(111)
+  fetchData({
+    roomId:'7065553714825349928'
+  }).then(res=>{
+    console.log(res)
+  })
+}
+xxx()
 </script>
