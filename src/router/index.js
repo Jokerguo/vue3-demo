@@ -16,6 +16,11 @@ const routes = [
     name: 'Echarts',
     component: () => import('@/views/echarts.vue')
   },
+  {
+    path: '/icon',
+    name: 'Icon',
+    component: () => import('@/views/icon.vue')
+  },
 ]
 const router = createRouter({
   history: createWebHistory(),
