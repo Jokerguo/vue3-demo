@@ -20,3 +20,7 @@ vue-global-api 自动引入所有vue3的api
 引入element-plus
 
 引入reset.css
+
+引入axios
+
+引入echarts

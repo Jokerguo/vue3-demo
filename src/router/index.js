@@ -11,6 +11,11 @@ const routes = [
     name: 'Money',
     component: () => import('@/views/money.vue')
   },
+  {
+    path: '/echarts',
+    name: 'Echarts',
+    component: () => import('@/views/echarts.vue')
+  },
 ]
 const router = createRouter({
   history: createWebHistory(),
