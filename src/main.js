@@ -7,9 +7,10 @@ import store from '@/store/index.js'
 import 'vue-global-api'
 import '@/assets/style/reset.css'
 import components from '@/components/index'
+import directive from '@/directive/index'
 
 const app = createApp(App)
 
 app.provide('$message',ElMessage)
 
-app.use(components).use(router).use(store).use(ElementPlus).mount('#app')
+app.use(components).use(directive).use(router).use(store).use(ElementPlus).mount('#app')

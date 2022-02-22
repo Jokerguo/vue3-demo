@@ -5,6 +5,9 @@
     <g-table></g-table>
     <g-tabs></g-tabs>
   </p>
+  <div>
+    <span v-copy="'嘻嘻嘻'">复制</span>
+  </div>
 </template>
 
 <script setup>

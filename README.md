@@ -26,3 +26,7 @@ vue-global-api 自动引入所有vue3的api
 引入echarts
 
 引入iconfont
+
+注册全局组件
+
+注册全局指令
