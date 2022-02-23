@@ -6,11 +6,19 @@
     <g-tabs></g-tabs>
   </p>
   <div>
-    <span v-copy="'嘻嘻嘻'">复制</span>
+    <template v-for="item in list" :key="item">
+      <span v-copy="item" style="display:block">{{item}}</span>
+    </template>
   </div>
+  <el-button type="primary" @click="toggleList">切换</el-button>
 </template>
 
 <script setup>
+const list = ref([ '第一3句','第二句' ])
+
+const toggleList = ()=>{
+  list.value = ['第三局','第四局']
+}
 </script>
 
 <style lang="scss" scoped>
